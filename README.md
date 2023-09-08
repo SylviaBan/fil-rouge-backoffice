@@ -1,2 +1,2 @@
 # fil-rouge-backoffice
-Gestion des administrateurs du site.
+Gestion des administrateurs du site de revente de billets.
