@@ -17,15 +17,18 @@
 
             <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item col-5 active text-center">
+                        <a class="nav-link bg-info text-dark rounded-3" href="list">List</a>
+                    </li>
+                    <li class="nav-item col-5 mx-4 text-center">
                         <a class="nav-link bg-warning text-dark rounded-3" href="search">Search</a>
                     </li>
-                    <li class="nav-item mx-2">
+                    <li class="nav-item col-5 mx-2 text-center">
                         <a class="nav-link bg-warning text-dark rounded-3" href="add">Add</a>
                     </li>
                 </ul>
             </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav1">
+            <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item bg-danger rounded-3">
                         <a class="nav-link text-light" href="logout">Logout</a>
