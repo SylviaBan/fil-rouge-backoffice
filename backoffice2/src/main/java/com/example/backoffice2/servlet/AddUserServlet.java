@@ -36,6 +36,7 @@ public class AddUserServlet extends HttpServlet {
 
         try {
             userRepo.create(new User(username, password, phoneNumber, photoUrl, email));
+            request.setAttribute("confirmationMessage", "Utilisateur ajouté avec succès !");
         } catch (Exception e) {
             e.printStackTrace();
             request.setAttribute("Error", "This user already exists.");
