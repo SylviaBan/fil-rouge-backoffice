@@ -11,7 +11,7 @@ public class UserRepository extends EntityRepository<User, Long> {
         super(emf, User.class);
     }
 
-    public User findUser(String login, String password) {
+    public User findUser(String username, String password) {
         EntityManager em = super.emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
 
@@ -20,8 +20,8 @@ public class UserRepository extends EntityRepository<User, Long> {
         User u = null;
         try {
             TypedQuery<User> tq = em.createQuery(
-                    "SELECT u FROM User u WHERE u.login = :login AND u.password = :password", User.class);
-            tq.setParameter("login", login);
+                    "SELECT u FROM User u WHERE u.username = :login OR u.password = :password", User.class);
+            tq.setParameter("username", username);
             tq.setParameter("password", password);
 
             u = tq.getSingleResult();

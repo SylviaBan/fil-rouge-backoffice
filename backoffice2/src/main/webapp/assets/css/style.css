@@ -1,0 +1,15 @@
+.my-custom-bg {
+    background-color: #b86227;
+    padding: 20px;
+}
+
+.my-card-bg {
+    background-color: #70370f;
+    padding: 20px;
+}
+
+.my-btn-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

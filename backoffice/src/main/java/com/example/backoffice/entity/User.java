@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 @SequenceGenerator(name="user_gen",sequenceName="user_seq", initialValue = 1, allocationSize = 1)
 public class User {
     @Id
-    @GeneratedValue(generator = "user_gen")
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String username;
     private String password;
@@ -38,6 +38,11 @@ public class User {
         this.username = username;
         this.password = password;
         this.email = email;
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 
     public User() {
