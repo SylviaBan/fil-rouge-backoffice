@@ -17,19 +17,25 @@
 
             <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item col-5 active text-center">
-                        <a class="nav-link bg-info text-dark rounded-3" href="list">List</a>
+                    <li class="nav-item col-3 active text-center mx-2">
+                        <a class="nav-link bg-primary text-light rounded-3" href="home-admin">Home</a>
                     </li>
-                    <li class="nav-item col-5 mx-4 text-center">
+                    <li class="nav-item col-3 text-center mx-2">
+                        <a class="nav-link bg-warning text-dark rounded-3" href="list">List</a>
+                    </li>
+                    <li class="nav-item col-3 text-center mx-2">
                         <a class="nav-link bg-warning text-dark rounded-3" href="search">Search</a>
                     </li>
-                    <li class="nav-item col-5 mx-2 text-center">
+                    <li class="nav-item col-3 text-center mx-2">
                         <a class="nav-link bg-warning text-dark rounded-3" href="add">Add</a>
                     </li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
+                    <li class="nav-item bg-primary rounded-3 mx-3">
+                        <a class="nav-link text-light" href="addAdmin">Create admin</a>
+                    </li>
                     <li class="nav-item bg-danger rounded-3">
                         <a class="nav-link text-light" href="logout">Logout</a>
                     </li>

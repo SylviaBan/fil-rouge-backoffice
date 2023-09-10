@@ -14,10 +14,10 @@
             <a class="navbar-brand" href="https://passetonbillet.fr/">
                 <i class="fas fa-ticket-alt fa-3x me-3" style="color: #ffffff;"></i>
             </a>
-            <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-start">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link text-light" href="login">Login</a>
+                        <a class="nav-link text-light bg-success rounded btn btn-lg" href="login">Login</a>
                     </li>
                 </ul>
             </div>

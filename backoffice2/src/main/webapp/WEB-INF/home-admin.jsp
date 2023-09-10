@@ -10,7 +10,7 @@
 
 <html>
 <head>
-  <title>Home</title>
+  <title>Admin</title>
   <c:import url="head.jsp"></c:import>
 </head>
 <body class="container-fluid">
@@ -27,7 +27,7 @@
          width: 100%;
          min-height: 100%;">
 
-    <h1 class="mt-5 mb-4 h1">Bienvenue sur MyTicket App</h1>
+    <h1 class="mt-5 mb-4 h1">Bienvenue sur MyTicket <i class="fas fa-ticket-alt" style="transform: rotate(45deg)"></i></h1>
     <h6 class="text-center">
       Outil de gestion des utilisateurs
     </h6>

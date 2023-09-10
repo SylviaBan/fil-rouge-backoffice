@@ -10,17 +10,17 @@ import java.io.IOException;
 public class LogoutServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/WEB-INF/logout.jsp").forward(request, response);
         HttpSession session = request.getSession(false);
-        // Si une session existe, la déconnecter (invalider)
+
         if(session != null){
             session.invalidate();
         }
         response.sendRedirect("login");
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
     }
 }

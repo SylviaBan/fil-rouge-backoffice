@@ -10,11 +10,11 @@
 
 <html>
 <head>
-    <title>Home</title>
+    <title>Logout</title>
     <c:import url="head.jsp"></c:import>
 </head>
 <body class="container-fluid">
-<c:import url="header-in.jsp"></c:import>
+<c:import url="header-out.jsp"></c:import>
 <main class="my-custom-bg" style="height: 100%; overflow: hidden;">
     <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-light"
          style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/68.jpg');

@@ -29,11 +29,11 @@
                         <form action="login" method="post" class="row">
                             <div class="col-12 my-2">
                                 <!--<label class="form-label" for="login">Login</label>-->
-                                <input class="form-control" id="login" name="login" type="text" value="Username">
+                                <input class="form-control" id="login" name="login" type="text" placeholder="Username" required>
                             </div>
                             <div class="col-12 my-2">
                                 <!--<label class="form-label" for="password">Password</label>-->
-                                <input class="form-control" id="password" name="password" type="password" value="******">
+                                <input class="form-control" id="password" name="password" type="password" placeholder="******" required>
                             </div>
                             <div class="col-6 my-2">
                                 <button class="btn btn-primary w-100" type="submit">Sign in</button>

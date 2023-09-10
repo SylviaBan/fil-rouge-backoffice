@@ -12,14 +12,11 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Affichage de la Vue jsp
-        request.getRequestDispatcher("/WEB-INF/login.jsp")
-                .forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         // Déclaration variables
         String login = request.getParameter("login");
         String password = request.getParameter("password");
@@ -28,7 +25,7 @@ public class LoginServlet extends HttpServlet {
         AdminRepository adminRepo = new AdminRepository(ConnexionDb.getInstanceEmf());
 
         try {
-            adminRepo.findAdmin(login,password);
+            adminRepo.findAdmin(login, password);
         } catch (Exception e) {
             e.printStackTrace();
             request.setAttribute("Error", "Compte déjà existant.");
