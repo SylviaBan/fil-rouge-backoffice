@@ -37,5 +37,13 @@
         <servlet-name>AddUserServlet</servlet-name>
         <url-pattern>/add</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>SearchUserServlet</servlet-name>
+        <servlet-class>com.example.backoffice2.servlet.SearchUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchUserServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
 
 </web-app>

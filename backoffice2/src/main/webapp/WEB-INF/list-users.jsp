@@ -51,7 +51,7 @@
                 <button type="submit" class="btn btn-danger my-btn-position" onclick="confirmDelete(${user.getId()})">
                   <span class="material-symbols-outlined">Delete</span>
                 </button>
-                <!-- Ajoutez un champ caché pour transmettre l'ID de l'utilisateur -->
+                <!-- Un champ caché pour transmettre l'ID de l'utilisateur -->
                 <input type="hidden" name="id" value="${user.getId()}">
               </form>
             </td>
