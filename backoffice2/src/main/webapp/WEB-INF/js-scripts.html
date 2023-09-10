@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:c="http://www.w3.org/1999/XSL/Transform">
+<head>
+    <c:import url="head.jsp"></c:import>
+</head>
+<body>
+<script>
+    function confirmDelete(userId) {
+        if (window.confirm("Êtes-vous sûr de vouloir supprimer cet utilisateur ?")) {
+            // Si l'utilisateur confirme, soumettez le formulaire pour supprimer l'utilisateur
+            document.querySelector(`form input[name='user'][value='${userId}']`).parentNode.submit();
+        }
+    }
+</script>
+<c:import url="footer.jsp"></c:import>
+</body>
+</html>

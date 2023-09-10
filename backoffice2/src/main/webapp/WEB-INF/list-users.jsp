@@ -13,7 +13,9 @@
   <c:import url="head.jsp"></c:import>
 </head>
 <body class="container my-custom-bg">
+<c:import url="js-scripts.html"></c:import>
 <c:import url="header-in.jsp"></c:import>
+
 <main>
   <section class="py-5">
     <div class="container py-5">
@@ -45,9 +47,13 @@
               </button>
             </td>
             <td>
-              <button type="button" class="btn btn-danger my-btn-position">
-                <span class="material-symbols-outlined">Delete</span>
-              </button>
+              <form action="delete" method="POST">
+                <button type="submit" class="btn btn-danger my-btn-position" onclick="confirmDelete(${user.getId()})">
+                  <span class="material-symbols-outlined">Delete</span>
+                </button>
+                <!-- Ajoutez un champ caché pour transmettre l'ID de l'utilisateur -->
+                <input type="hidden" name="id" value="${user.getId()}">
+              </form>
             </td>
             <td>
               <button type="button" class="btn btn-success my-btn-position">

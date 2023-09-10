@@ -28,11 +28,11 @@
           <form action="add" method="post" class="bg-warning p-4 rounded mt-4">
             <div class="mb-3">
               <label class="form-label" for="nom">Username</label>
-              <input class="form-control" id="nom" name="username" type="text">
+              <input class="form-control" id="nom" name="username" type="text" required>
             </div>
             <div class="mb-3">
               <label class="form-label" for="pwd">Password</label>
-              <input class="form-control" id="pwd" name="password" type="password">
+              <input class="form-control" id="pwd" name="password" type="password" required>
             </div>
             <div class="mb-3">
               <label class="form-label" for="phone">Phone</label>
@@ -44,9 +44,12 @@
             </div>
             <div class="mb-3">
               <label class="form-label" for="email">Email</label>
-              <input class="form-control" id="email" name="email" type="email">
+              <input class="form-control" id="email" name="email" type="email" required>
             </div>
             <div class="mb-3 text-center d-flex justify-content-end">
+              <c:if test="${not empty confirmationMessage}">
+                <div class="alert alert-success">${confirmationMessage}</div>
+              </c:if>
               <button class="btn btn-primary" type="submit">Add</button>
             </div>
           </form>

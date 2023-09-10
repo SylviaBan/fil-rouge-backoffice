@@ -9,12 +9,14 @@ public class User {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
+    @Column(unique = true)
     private String username;
     private String password;
     @Column(name="phone")
     private Long phoneNumber;
     @Column(name="photo")
     private String photoUrl;
+    @Column(unique = true)
     private String email;
 
     public User(Long id, String username, String password, Long phoneNumber, String photoUrl, String email) {
