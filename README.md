@@ -5,7 +5,14 @@
 Réalisation de la partie backoffice dédiée aux administrateurs.
 
 ### :ladder: Tools : 
-* JakartaEE + JSTL + JSP
+* JakartaEE
+* JSTL : 1.2
+* JSP : 2.0.0
+* IDE : intelliJ 17.0.7 Ultimate
+* SDK : 1.8
+* Apache Tomcat: 9.0.78
+* Servlet API : jakarta.servlet-api-5.0.0
+* MySQL : mysql-connector-j-8.0.31
 
 ### :spiral_notepad: Objectifs :
 
