@@ -16,17 +16,7 @@
 <body class="container-fluid">
 <c:import url="header-out.jsp"></c:import>
 <main class="my-custom-bg" style="height: 100%; overflow: hidden;">
-    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-light"
-         style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/68.jpg');
-          background-size: 1000px;
-          background-repeat: no-repeat;
-          background-position: bottom;
-          position: relative;
-          background-attachment: fixed;
-          padding: 20px;
-         width: 100%;
-         min-height: 100%;">
-
+    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-light">
             <h1 class="py-5">A bientôt !</h1>
         </div>
     </section>

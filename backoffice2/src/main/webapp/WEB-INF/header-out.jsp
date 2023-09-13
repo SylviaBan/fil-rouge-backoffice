@@ -16,8 +16,11 @@
             </a>
             <div class="collapse navbar-collapse justify-content-start">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link text-light bg-success rounded btn btn-lg" href="login">Login</a>
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link text-light bg-success rounded btn btn-lg" href="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light bg-primary rounded btn btn-lg" href="login">Login</a>
                     </li>
                 </ul>
             </div>
