@@ -13,9 +13,9 @@
   <title>Home</title>
   <c:import url="head.jsp"></c:import>
 </head>
-<body class="container-fluid">
+<body class="container-fluid my-custom-bg">
 <c:import url="header-out.jsp"></c:import>
-<main class="my-custom-bg" style="height: 100%; overflow: hidden;">
+<main style="height: 100%; overflow: hidden;">
   <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-light">
     <h1 class="mt-5 mb-4 h1">
       Bienvenue sur MyTicket

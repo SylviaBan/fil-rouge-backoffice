@@ -33,8 +33,11 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
-                    <li class="nav-item bg-primary rounded-3 mx-3">
+                    <li class="nav-item bg-primary rounded-3">
                         <a class="nav-link text-light" href="addAdmin">Create admin</a>
+                    </li>
+                    <li class="nav-item bg-primary rounded-3 mx-2">
+                        <a class="nav-link text-light" href="listAdmins">Show admin</a>
                     </li>
                     <li class="nav-item bg-danger rounded-3">
                         <a class="nav-link text-light" href="logout">Logout</a>
