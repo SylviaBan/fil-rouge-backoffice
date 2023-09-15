@@ -29,7 +29,7 @@
           <th>Phone</th>
           <th>Photo</th>
           <th>Email</th>
-          <th colspan="4">Actions</th>
+          <th colspan="4" class="btn-actions">Actions</th>
         </tr>
         </thead>
         <tbody>
@@ -41,27 +41,25 @@
             <td>${user.getPhoneNumber()}</td>
             <td>${user.getPhotoUrl()}</td>
             <td>${user.getEmail()}</td>
-            <td>
-              <button type="button" class="btn btn-primary my-btn-position">
-                <span class="material-symbols-outlined">Edit</span>
+            <td class="td-btn">
+              <a class="btn btn-primary"
+                 href="${pageContext.request.contextPath}/edit?id=${user.getId()}">Edit</a>
+            </td>
+            <td class="td-btn">
+            <form action="delete" method="POST" class="m-0">
+              <button class="btn btn-danger" onclick="confirmDelete(${user.getId()})">
+                <span class="material-symbols-outlined">Delete</span>
               </button>
+              <input type="hidden" name="id" value="${user.getId()}">
+            </form>
             </td>
-            <td>
-              <form action="delete" method="POST">
-                <button type="submit" class="btn btn-danger my-btn-position" onclick="confirmDelete(${user.getId()})">
-                  <span class="material-symbols-outlined">Delete</span>
-                </button>
-                <!-- Un champ caché pour transmettre l'ID de l'utilisateur -->
-                <input type="hidden" name="id" value="${user.getId()}">
-              </form>
-            </td>
-            <td>
-              <button type="button" class="btn btn-success my-btn-position">
+            <td class="td-btn">
+              <button type="button" class="btn btn-success">
                 <span class="material-symbols-outlined">Activate</span>
               </button>
             </td>
-            <td>
-              <button type="button" class="btn btn-secondary my-btn-position">
+            <td class="td-btn">
+              <button type="button" class="btn btn-secondary">
                 <span class="material-symbols-outlined">Deactivate</span>
               </button>
             </td>

@@ -79,5 +79,13 @@
         <servlet-name>AddAdminServlet</servlet-name>
         <url-pattern>/addAdmin</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>EditUserServlet</servlet-name>
+        <servlet-class>com.example.backoffice2.servlet.EditUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditUserServlet</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
 
 </web-app>

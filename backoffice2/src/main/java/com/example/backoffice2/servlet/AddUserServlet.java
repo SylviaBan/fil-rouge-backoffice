@@ -21,15 +21,9 @@ public class AddUserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        String phone = request.getParameter("phone");
+        String phoneNumber = request.getParameter("phoneNumber");
         String photoUrl = request.getParameter("photoUrl");
         String email = request.getParameter("email");
-
-        Long phoneNumber = null;
-        // Essayez de convertir la chaîne phoneString en Long
-        if (phone != null) {
-            phoneNumber = Long.parseLong(phone);
-        }
 
         // Connexion à la bdd
         UserRepository userRepo = new UserRepository(ConnexionDb.getInstanceEmf());

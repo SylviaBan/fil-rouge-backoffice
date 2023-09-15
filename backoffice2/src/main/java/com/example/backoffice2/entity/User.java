@@ -13,13 +13,13 @@ public class User {
     private String username;
     private String password;
     @Column(name="phone")
-    private Long phoneNumber;
+    private String phoneNumber;
     @Column(name="photo")
     private String photoUrl;
     @Column(unique = true)
     private String email;
 
-    public User(Long id, String username, String password, Long phoneNumber, String photoUrl, String email) {
+    public User(Long id, String username, String password, String phoneNumber, String photoUrl, String email) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -28,7 +28,7 @@ public class User {
         this.email = email;
     }
 
-    public User(String username, String password, Long phoneNumber, String photoUrl, String email) {
+    public User(String username, String password, String phoneNumber, String photoUrl, String email) {
         this.username = username;
         this.password = password;
         this.phoneNumber = phoneNumber;
@@ -74,11 +74,11 @@ public class User {
         this.password = password;
     }
 
-    public Long getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(Long phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
