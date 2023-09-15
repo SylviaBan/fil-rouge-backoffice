@@ -6,8 +6,7 @@
 <body>
 <script>
     function confirmDelete(userId) {
-        if (window.confirm("Êtes-vous sûr de vouloir supprimer cet utilisateur ?")) {
-            // Si l'utilisateur confirme, soumettez le formulaire pour supprimer l'utilisateur
+        if (window.confirm("Etes-vous sur de vouloir supprimer cet utilisateur ?")) {
             document.querySelector(`form input[name='user'][value='${userId}']`).parentNode.submit();
         }
     }

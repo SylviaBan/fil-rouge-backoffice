@@ -10,7 +10,7 @@
 
 <html>
 <head>
-  <title>Admin</title>
+  <title>Home</title>
   <c:import url="head.jsp"></c:import>
 </head>
 <body class="container-fluid my-custom-bg">
@@ -18,9 +18,9 @@
 <main style="height: 100%; overflow: hidden;">
   <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-light">
     <h1 class="mt-5 mb-4 h1">Bienvenue sur MyTicket <i class="fas fa-ticket-alt" style="transform: rotate(45deg)"></i></h1>
-    <h6 class="text-center">
+    <h5 class="text-center">
       Outil de gestion des utilisateurs
-    </h6>
+    </h5>
   </div>
 </main>
 

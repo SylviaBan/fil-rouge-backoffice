@@ -38,7 +38,7 @@
               <c:if test="${not empty confirmationMessage}">
                 <div class="alert alert-success">${confirmationMessage}</div>
               </c:if>
-              <button class="btn btn-primary" type="submit">Add</button>
+              <button class="btn btn-primary" type="submit">Ajouter</button>
             </div>
           </form>
         </div>

@@ -10,7 +10,7 @@
 
 <html>
 <head>
-  <title>Home</title>
+  <title>Login</title>
   <c:import url="head.jsp"></c:import>
 </head>
 <body class="container-fluid my-custom-bg">
