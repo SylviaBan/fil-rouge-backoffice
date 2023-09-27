@@ -22,7 +22,6 @@ public class Main {
         User user5 = new User("AnneAnne","4321","0606060605", "https://url5","anne@duris.com");
         User user6 = new User("user2024","2024","0606060606", "https://url6","user2024@gmail.com");
 
-
         userRepo.create(user1);
         userRepo.create(user2);
         userRepo.create(user3);
@@ -36,5 +35,6 @@ public class Main {
 
         adminRepo.create(admin1);
         adminRepo.create(admin2);
+        adminRepo.create(admin3);
     }
 }

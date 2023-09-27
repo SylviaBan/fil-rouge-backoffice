@@ -57,4 +57,29 @@ public class UserRepository extends EntityRepository<User, Long> {
 
         return u;
     }
+
+    public int activateUser(Long userId) {
+        EntityManager em = super.emf.createEntityManager();
+
+        try {
+            return em.createQuery("UPDATE User u SET u.enabled = true WHERE u.id = :userId")
+                    .setParameter("userId", userId)
+                    .executeUpdate();
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
+    public int deactivateUser(Long userId) {
+        EntityManager em = super.emf.createEntityManager();
+        try {
+            return em.createQuery("UPDATE User u SET u.enabled = false WHERE u.id = :userId")
+                    .setParameter("userId", userId)
+                    .executeUpdate();
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
+
 }

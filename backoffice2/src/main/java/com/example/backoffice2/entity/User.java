@@ -18,6 +18,9 @@ public class User {
     private String photoUrl;
     @Column(unique = true)
     private String email;
+    @Column(name="actif")
+    private boolean enabled = false;
+
 
     public User(Long id, String username, String password, String phoneNumber, String photoUrl, String email) {
         this.id = id;
@@ -96,5 +99,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 }

@@ -22,4 +22,6 @@ public class PasswordHasher {
         // Masquer le mot de passe comme vous le souhaitez, par exemple : "********"
         return "********";
     }
+
+    // Bcrypt 
 }

@@ -53,15 +53,19 @@
               <input type="hidden" name="id" value="${user.getId()}">
             </form>
             </td>
-            <td class="td-btn">
-              <button type="button" class="btn btn-success">
-                <span class="material-symbols-outlined">Activate</span>
-              </button>
+            <td class="td-checkbox">
+              <form action="activateUser" method="POST">
+                <input type="hidden" name="id" value="${user.getId()}">
+                <input type="checkbox" name="activate" id="activate-${user.getId()}">
+                <label for="activate-${user.getId()}" class="checkbox-label-activ">Activer</label>
+              </form>
             </td>
-            <td class="td-btn">
-              <button type="button" class="btn btn-secondary">
-                <span class="material-symbols-outlined">Deactivate</span>
-              </button>
+            <td class="td-checkbox">
+              <form action="deactivateUser" method="POST">
+                <input type="hidden" name="id" value="${user.getId()}">
+                <input type="checkbox" name="deactivate" id="deactivate-${user.getId()}">
+                <label for="deactivate-${user.getId()}" class="checkbox-label-deactiv">Désactiver</label>
+              </form>
             </td>
           </tr>
         </c:forEach>

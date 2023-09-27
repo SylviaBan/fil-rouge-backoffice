@@ -29,3 +29,23 @@
     width: 100%;
     min-height: 100%;
 }
+
+.checkbox-label-activ {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: olivedrab;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox-label-deactiv {
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 8px 16px;
+    background-color: dimgray;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}

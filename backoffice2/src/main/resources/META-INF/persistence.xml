@@ -9,7 +9,7 @@
 
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver" />
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:8889/Fil_rouge_backoffice" />
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:8889/bdd_fil_rouge_g2" />
             <property name="hibernate.connection.username" value="root" />
             <property name="hibernate.connection.password" value="root" />
 
